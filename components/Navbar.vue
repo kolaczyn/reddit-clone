@@ -1,28 +1,27 @@
 <template>
-  <div>
-    <nav class="w-full bg-white text-blue-700">
-      <nuxt-link to="/">
-        home
-      </nuxt-link>
+  <div class="bg-white w-full py-2">
+    <div class="container mx-auto flex items-center justify-between">
+      <nav>
+        <nuxt-link to="/" class="font-bold text-red-400">
+          reddit
+        </nuxt-link>
+      </nav>
+      <SearchBar />
       <nuxt-link to="/login">
-        login
+        <Button>
+          Log In
+        </Button>
       </nuxt-link>
-      <nuxt-link to="/r/vue">
-        r/vue
-      </nuxt-link>
-      <nuxt-link to="/r/react">
-        r/react
-      </nuxt-link>
-    </nav>
-    <SearchBar />
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
 import SearchBar from '@/components/SearchBar.vue'
+import Button from '@/components/ui/Button.vue'
 
 export default Vue.extend({
-  components: { SearchBar }
+  components: { SearchBar, Button }
 })
 </script>

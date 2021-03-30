@@ -16,9 +16,6 @@
         <CloseIcon class="cursor-pointer" />
       </button>
     </div>
-    <pre>
-      {{ inputText }}
-    </pre>
   </div>
 </template>
 
