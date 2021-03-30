@@ -11,7 +11,7 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dolore sunt magni. Fugiat harum sit, totam asperiores possimus fuga sunt!</p>
       </slot>
     </LabeledPaper>
-    <Button :handleClick="handleClick">
+    <Button :handle-click="handleClick">
       Click me!
     </Button>
   </div>
@@ -27,6 +27,7 @@ export default Vue.extend({
   components: { LabeledPaper, Paper, Button },
   methods: {
     handleClick () {
+      // eslint-disable-next-line no-console
       console.log('you clicked me')
     }
   }
