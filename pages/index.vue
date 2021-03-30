@@ -1,11 +1,36 @@
 <template>
-<h1>This is reddit clone</h1>
+  <div>
+    <Paper class="w-80 m-4 p-2">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque adipisci consequuntur beatae expedita velit ea quibusdam aliquid nemo quod autem?</p>
+    </Paper>
+    <LabeledPaper class="w-80 m-4">
+      <template #header>
+        Hello, I am header
+      </template>
+      <slot>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dolore sunt magni. Fugiat harum sit, totam asperiores possimus fuga sunt!</p>
+      </slot>
+    </LabeledPaper>
+    <Button :handleClick="handleClick">
+      Click me!
+    </Button>
+  </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
+import LabeledPaper from '@/components/ui/LabeledPaper.vue'
+import Paper from '@/components/ui/Paper.vue'
+import Button from '@/components/ui/Button.vue'
 
-export default Vue.extend({})
+export default Vue.extend({
+  components: { LabeledPaper, Paper, Button },
+  methods: {
+    handleClick () {
+      console.log('you clicked me')
+    }
+  }
+})
 </script>
 
 <style>
