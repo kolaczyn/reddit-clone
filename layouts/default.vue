@@ -5,12 +5,11 @@
   </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
+<script>
 import Navbar from '@/components/Navbar.vue'
-export default Vue.extend({
-    component: {
-    Navbar,
-    }
-})
+export default {
+  component: {
+    Navbar
+  }
+}
 </script>
