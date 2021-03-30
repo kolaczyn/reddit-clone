@@ -11,6 +11,9 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dolore sunt magni. Fugiat harum sit, totam asperiores possimus fuga sunt!</p>
       </slot>
     </LabeledPaper>
+    <Button :handleClick="handleClick">
+      Click me!
+    </Button>
   </div>
 </template>
 
@@ -18,9 +21,15 @@
 import Vue from 'vue'
 import LabeledPaper from '@/components/ui/LabeledPaper.vue'
 import Paper from '@/components/ui/Paper.vue'
+import Button from '@/components/ui/Button.vue'
 
 export default Vue.extend({
-  components: { LabeledPaper, Paper }
+  components: { LabeledPaper, Paper, Button },
+  methods: {
+    handleClick () {
+      console.log('you clicked me')
+    }
+  }
 })
 </script>
 
