@@ -5,26 +5,13 @@
   </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
-import PostsTimeline from '@/components/PostsTimeline.vue'
-import Sidebar from '@/components/Sidebar.vue'
-
-export default Vue.extend({
-  components: { PostsTimeline, Sidebar },
+<script>
+export default {
   methods: {
     handleClick () {
       // eslint-disable-next-line no-console
       console.log('you clicked me')
     }
   }
-})
-</script>
-
-<style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-@apply min-h-screen flex justify-center items-center text-center mx-auto;
 }
-*/
-</style>
+</script>
