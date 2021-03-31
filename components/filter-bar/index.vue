@@ -1,16 +1,16 @@
 <template>
+  <!-- There must a be a better way to do this in Vue, because this looks pretty ugly -->
   <BasePaper class="p-2">
     <ul class="flex gap-2 items-center">
-      <li>
-        <FilterBarButton is-active>
-          <template #icon>
-            <IconHot />
-          </template>
-          Hot
-        </FilterBarButton>
+      <FilterBarButton :handle-click="() => handleClick('Hot')" :is-active="activeFilter === 'Hot'">
+        <template #icon>
+          <IconHot />
+        </template>
+        Hot
+      </FilterBarButton>
       </li>
       <li>
-        <FilterBarButton>
+        <FilterBarButton :handle-click="() => handleClick('New')" :is-active="activeFilter === 'New'">
           <template #icon>
             <IconNew />
           </template>
@@ -18,7 +18,7 @@
         </FilterBarButton>
       </li>
       <li>
-        <FilterBarButton>
+        <FilterBarButton :handle-click="() => handleClick('Top')" :is-active="activeFilter === 'Top'">
           <template #icon>
             <IconTop />
           </template>
@@ -26,14 +26,14 @@
         </FilterBarButton>
       </li>
       <li class="flex-grow">
-        <FilterBarButton>
+        <FilterBarButton :handle-click="() => handleClick('TripleDot')" :is-active="activeFilter === 'TripleDot'">
           <template #icon>
             <IconTripleDot />
           </template>
         </FilterBarButton>
       </li>
       <li>
-        <FilterBarButton is-active>
+        <FilterBarButton :handle-click="() => handleClick('CardView')" :is-active="activeFilter === 'CardView'">
           <template #icon>
             <IconCardView />
           </template>
@@ -43,3 +43,18 @@
     </ul>
   </BasePaper>
 </template>
+
+<script lang="ts">
+export default {
+  data () {
+    return {
+      activeFilter: 'Hot'
+    }
+  },
+  methods: {
+    handleClick (label: string) {
+      this.activeFilter = label
+    }
+  }
+}
+</script>
