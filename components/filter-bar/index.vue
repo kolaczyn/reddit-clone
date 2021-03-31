@@ -44,7 +44,7 @@
   </BasePaper>
 </template>
 
-<script lang="ts">
+<script>
 export default {
   data () {
     return {
@@ -52,7 +52,7 @@ export default {
     }
   },
   methods: {
-    handleClick (label: string) {
+    handleClick (label) {
       this.activeFilter = label
     }
   }
