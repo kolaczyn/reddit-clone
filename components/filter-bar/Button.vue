@@ -1,5 +1,5 @@
 <template>
-  <button :class="['flex items-center px-3 py-1.5 font-bold gap-1.5 group hover:bg-gray-200 rounded-full', isActive ? 'text-black' : 'text-gray-500']">
+  <button :class="['flex items-center px-3 py-1.5 font-bold group hover:bg-gray-200 rounded-full', isActive ? 'text-black' : 'text-gray-500', $slots.default && 'gap-1.5']">
     <slot name="icon" />
     <span>
       <slot />
