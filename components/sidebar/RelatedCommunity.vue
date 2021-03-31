@@ -1,6 +1,6 @@
 <template>
   <section class="flex items-center">
-    <BaseAvatar class="mr-2" />
+    <BaseAvatar class="mr-2 w-8 h-8" />
     <span class="text-sm flex-1">
       <nuxt-link :to="linkToSubreddit" class="hover:underline font-bold">
         <h4>r/{{ subredditName }}</h4>
