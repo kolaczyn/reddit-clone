@@ -6,22 +6,12 @@
           reddit
         </nuxt-link>
       </nav>
-      <SearchBar />
+      <NavbarSearchBar />
       <nuxt-link to="/login">
-        <Button>
+        <BaseButton>
           Log In
-        </Button>
+        </BaseButton>
       </nuxt-link>
     </div>
   </div>
 </template>
-
-<script lang="ts">
-import Vue from 'vue'
-import SearchBar from '@/components/SearchBar.vue'
-import Button from '@/components/ui/Button.vue'
-
-export default Vue.extend({
-  components: { SearchBar, Button }
-})
-</script>
