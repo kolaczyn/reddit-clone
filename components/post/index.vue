@@ -4,7 +4,7 @@
       29.5k
     </PostUpvoteSection>
     <div class="p-2">
-      <PostMetaInfo />
+      <PostMetaInfo user="ser" creation-date="11 hours ago" class="mb-2" />
       <PostTitle />
       <PostContent />
       <PostInteractionButtons />
