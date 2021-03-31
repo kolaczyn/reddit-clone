@@ -1,5 +1,5 @@
 <template>
   <h2 class="font-bold">
-    Post's title
+    <slot />
   </h2>
 </template>

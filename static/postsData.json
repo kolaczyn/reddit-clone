@@ -1,0 +1,56 @@
+[
+  {
+    "user": "ser",
+    "title": "Why don't crabs give to charity?",
+    "upvotesCount": "351",
+    "commentsCount": 2,
+    "creationTimestamp": "10 hours ago",
+    "content": "Because they're shellfish.",
+    "id": 0
+  },
+  {
+    "user": "vue",
+    "title": "Why did the man name his dogs Rolex and Timex?",
+    "upvotesCount": "555",
+    "commentsCount": 21,
+    "creationTimestamp": "11 days ago",
+    "content": "Because they were watch dogs.",
+    "id": 1
+  },
+  {
+    "user": "misa",
+    "title": "What’s the best way to watch a fly-fishing tournament?",
+    "upvotesCount": "3",
+    "commentsCount": 0,
+    "creationTimestamp": "2 hours ago",
+    "content": "Live stream",
+    "id": 2
+  },
+  {
+    "user": "light",
+    "title": "Why do you never see elephants hiding in trees?",
+    "upvotesCount": "12k",
+    "commentsCount": 2,
+    "creationTimestamp": "23 hours ago",
+    "content": "Because they’re so good at it.",
+    "id": 3
+  },
+  {
+    "user": "megumin",
+    "title": "What do you call 50 pigs and 50 deer?",
+    "upvotesCount": "2.5k",
+    "commentsCount": 250,
+    "creationTimestamp": "1 month ago",
+    "content": "100 sows and bucks.",
+    "id": 4
+  },
+  {
+    "user": "darkness",
+    "title": "What do you call a fish with no eye?",
+    "upvotesCount": "10k",
+    "commentsCount": 250,
+    "creationTimestamp": "2 months ago",
+    "content": "A fsh.",
+    "id": 5
+  }
+]

@@ -5,7 +5,9 @@
         <template #icon>
           <IconComment />
         </template>
-        3 Comments
+        <span>
+          {{ commentsCount }} Comments
+        </span>
       </PostInteractionButton>
     </li>
     <li>
@@ -13,7 +15,9 @@
         <template #icon>
           <IconShare />
         </template>
-        Share
+        <span>
+          Share
+        </span>
       </PostInteractionButton>
     </li>
     <li>
@@ -21,7 +25,9 @@
         <template #icon>
           <IconSave />
         </template>
-        Save
+        <span>
+          Save
+        </span>
       </PostInteractionButton>
     </li>
     <li>
@@ -33,3 +39,14 @@
     </li>
   </ul>
 </template>
+
+<script>
+export default {
+  props: {
+    commentsCount: {
+      type: String,
+      required: true
+    }
+  }
+}
+</script>
