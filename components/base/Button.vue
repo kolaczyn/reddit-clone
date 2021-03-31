@@ -10,7 +10,8 @@ export default Vue.extend({
   props: {
     handleClick: {
       type: Function,
-      required: true
+      required: false,
+      default: () => {}
     }
   }
 })
