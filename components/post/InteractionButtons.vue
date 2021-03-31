@@ -44,7 +44,7 @@
 export default {
   props: {
     commentsCount: {
-      type: String,
+      type: Number,
       required: true
     }
   }
