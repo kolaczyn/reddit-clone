@@ -1,5 +1,7 @@
 <template>
-  <p>Welcome on r/{{ subreddit }}</p>
+  <div>
+    <p>Welcome on r/{{ subreddit }}</p>
+  </div>
 </template>
 
 <script lang="ts">
