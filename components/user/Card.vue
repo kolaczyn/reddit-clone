@@ -1,24 +1,30 @@
 <template>
   <BasePaper>
     <div class="bg-blue-500 h-24 relative mb-8">
-      <UserAvatar class="absolute left-2 top-8" />
+      <UserAvatar class="absolute left-2 top-6" />
     </div>
-    <div class="p-2">
-      <div class="text-sm font-bold">
+    <div class="p-2 pt-0">
+      <div class="text-sm font-bold mb-2">
         u/{{ username }}
       </div>
-      <p>{{ description }}</p>
-      <section class="grid grid-cols-2 gap-2">
+      <p class="leading-tight mb-2">
+        {{ description }}
+      </p>
+      <section class="grid grid-cols-2 gap-2 text-sm">
         <section class="col-span-1">
-          <span class="font-bold">Karma</span>
-          <span>{{ karma }}</span>
+          <div class="font-bold">
+            Karma
+          </div>
+          <div>{{ karma }}</div>
         </section>
         <section class="col-span-1">
-          <span class="font-bold">Cake day</span>
-          <span>{{ cakeDay }}</span>
+          <div class="font-bold">
+            Cake day
+          </div>
+          <div>{{ cakeDay }}</div>
         </section>
       </section>
-      <BaseButton class="w-full">
+      <BaseButton class="w-full mt-2 mb-2">
         Follow
       </BaseButton>
       <button class="font-bold text-blue-600 ml-auto block">
