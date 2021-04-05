@@ -15,20 +15,34 @@
           <div class="font-bold">
             Karma
           </div>
-          <div>{{ karma }}</div>
+          <div class="flex items-center gap-1">
+            <IconKarma class="inline text-blue-500" />
+            <span class="text-gray-500">{{ karma }}</span>
+          </div>
         </section>
         <section class="col-span-1">
           <div class="font-bold">
             Cake day
           </div>
-          <div>{{ cakeDay }}</div>
+          <div class="flex items-center gap-1">
+            <IconCake class="inline text-blue-500" />
+            <span class="text-gray-500">{{ cakeDay }}</span>
+          </div>
         </section>
       </section>
       <BaseButton class="w-full mt-2 mb-2">
         Follow
       </BaseButton>
-      <button class="font-bold text-blue-600 ml-auto block">
-        More options
+      <div v-if="isMoreOptionsOn">
+        <button class="font-bold text-blue-600 block">
+          Send Message
+        </button>
+        <button class="font-bold text-blue-600 block">
+          Report User
+        </button>
+      </div>
+      <button class="font-bold text-blue-600 ml-auto block" @click="toggleShowMoreOptions">
+        {{ showOptionsText }}
       </button>
     </div>
   </BasePaper>
@@ -52,6 +66,21 @@ export default {
     cakeDay: {
       type: String,
       required: true
+    }
+  },
+  data () {
+    return {
+      isMoreOptionsOn: false
+    }
+  },
+  computed: {
+    showOptionsText () {
+      return this.isMoreOptionsOn ? 'Fewer Options' : 'More Options'
+    }
+  },
+  methods: {
+    toggleShowMoreOptions () {
+      this.isMoreOptionsOn = !this.isMoreOptionsOn
     }
   }
 }
