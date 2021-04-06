@@ -4,18 +4,18 @@
     <div class="bg-white py-2">
       <LayoutMediumContainer class="-mt-6 flex items-start">
         <BaseAvatar class="border-4 border-white box-content mr-4 w-20 h-20" />
-        <div class="mt-6">
-          <div class="flex items-center">
+        <div class="mt-6 flex items-start">
+          <div class="max-w-sm">
             <h1 class="font-bold text-2xl mr-4">
               <slot />
             </h1>
-            <BaseButton>
-              Join
-            </BaseButton>
+            <span class="text-gray-600">
+              {{ subredditName }}
+            </span>
           </div>
-          <span class="text-gray-600">
-            {{ subredditName }}
-          </span>
+          <BaseButton class="xs:inline-block hidden">
+            Join
+          </BaseButton>
         </div>
       </LayoutMediumContainer>
     </div>
