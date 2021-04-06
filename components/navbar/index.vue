@@ -1,7 +1,7 @@
 <template>
   <div class="bg-white w-full py-2">
     <LayoutLargeContainer class="flex items-center justify-between">
-      <nuxt-link to="/">
+      <nuxt-link to="/r/all">
         <Logo />
       </nuxt-link>
       <NavbarSearchBar />
