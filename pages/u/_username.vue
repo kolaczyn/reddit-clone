@@ -1,5 +1,15 @@
 <template>
-  <UserCard class="w-96 m-2" :username="username" :description="description" :karma="karma" :cake-day="cakeDay" />
+  <LayoutMediumContainer>
+    <LayoutMainTwoCols class="mt-2 mx-auto">
+      <template #first>
+        <FilterBar class="mb-2" />
+        <PostsTimeline />
+      </template>
+      <template #second>
+        <UserCard :username="username" :description="description" :karma="karma" :cake-day="cakeDay" />
+      </template>
+    </LayoutMainTwoCols>
+  </LayoutMediumContainer>
 </template>
 
 <script>

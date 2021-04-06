@@ -2,7 +2,7 @@
   <div class="w-full">
     <div class="h-32 banner" />
     <div class="bg-white py-2">
-      <div class="px-4 -mt-6 mx-auto max-w-4xl flex items-start">
+      <LayoutMediumContainer class="-mt-6 flex items-start">
         <BaseAvatar class="border-4 border-white box-content mr-4 w-20 h-20" />
         <div class="mt-6">
           <div class="flex items-center">
@@ -17,7 +17,7 @@
             {{ subredditName }}
           </span>
         </div>
-      </div>
+      </LayoutMediumContainer>
     </div>
   </div>
 </template>
