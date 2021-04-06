@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white w-full py-2">
-    <div class="flex container mx-auto items-center justify-between">
+    <LayoutLargeContainer class="flex items-center justify-between">
       <nuxt-link to="/">
         <Logo />
       </nuxt-link>
@@ -10,7 +10,7 @@
           Log In
         </BaseButton>
       </nuxt-link>
-    </div>
+    </LayoutLargeContainer>
   </div>
 </template>
 

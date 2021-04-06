@@ -1,5 +1,5 @@
 <template>
-  <div class="m-2 px-4 max-w-4xl mx-auto">
+  <LayoutMediumContainer>
     <LayoutMainTwoCols class="mt-2">
       <template #first>
         <FilterBar class="mb-2" />
@@ -9,7 +9,7 @@
         <Sidebar />
       </template>
     </LayoutMainTwoCols>
-  </div>
+  </LayoutMediumContainer>
 </template>
 
 <script>
