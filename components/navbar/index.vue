@@ -1,12 +1,12 @@
 <template>
-  <div class="bg-white w-full py-2">
-    <LayoutLargeContainer class="flex items-center justify-between">
+  <div class="bg-white w-full py-2 fixed">
+    <LayoutLargeContainer class="flex items-center justify-between gap-4">
       <nuxt-link to="/r/all">
         <Logo />
       </nuxt-link>
-      <NavbarSearchBar />
-      <nuxt-link to="/login">
-        <BaseButton :handle-click="handleClick">
+      <NavbarSearchBar class="flex-grow md:max-w-xl" />
+      <nuxt-link to="/login" class="md:block hidden">
+        <BaseButton>
           Log In
         </BaseButton>
       </nuxt-link>
@@ -16,10 +16,5 @@
 
 <script>
 export default {
-  methods: {
-    handleClick () {
-      console.log('loggin in')
-    }
-  }
 }
 </script>

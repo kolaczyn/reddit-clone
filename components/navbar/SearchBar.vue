@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      :class="['cursor-text px-4 py-2 w-80 flex items-center hover:bg-white group border hover:border-blue-400 rounded', focus ? 'bg-white' : 'bg-gray-100', focus && 'border-blue-400']"
+      :class="['cursor-text px-4 py-2 w-full flex items-center hover:bg-white group border hover:border-blue-400 rounded', focus ? 'bg-white' : 'bg-gray-100', focus && 'border-blue-400']"
       @click="focusInput"
     >
       <IconSearch class="text-gray-500" />
