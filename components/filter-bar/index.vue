@@ -1,7 +1,7 @@
 <template>
   <!-- There must a be a better way to do this in Vue, because this looks pretty ugly -->
   <BasePaper class="p-2">
-    <ul class="flex gap-2 items-center">
+    <ul class="flex gap-2 text-xs sm:text-base items-center">
       <FilterBarButton :handle-click="() => handleClick('Hot')" :is-active="activeFilter === 'Hot'">
         <template #icon>
           <IconHot />
@@ -25,14 +25,14 @@
           Top
         </FilterBarButton>
       </li>
-      <li class="flex-grow">
+      <li class="flex-grow xs:inline-block hidden">
         <FilterBarButton :handle-click="() => handleClick('TripleDot')" :is-active="activeFilter === 'TripleDot'">
           <template #icon>
             <IconTripleDot />
           </template>
         </FilterBarButton>
       </li>
-      <li>
+      <li class="xs:inline-block hidden">
         <FilterBarButton :handle-click="() => handleClick('CardView')" :is-active="activeFilter === 'CardView'">
           <template #icon>
             <IconCardView />
