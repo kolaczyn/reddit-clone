@@ -1,8 +1,8 @@
 <template>
-  <LayoutMediumContainer>
-    <LayoutMainTwoCols class="mt-2 mx-auto">
+  <LayoutMediumContainer class="pt-3">
+    <LayoutMainTwoCols class="mx-auto">
       <template #first>
-        <FilterBar class="mb-2" />
+        <FilterBar class="mb-3" />
         <PostsTimeline />
       </template>
       <template #second>
