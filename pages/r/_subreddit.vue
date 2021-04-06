@@ -3,10 +3,10 @@
     <SubredditHeader subreddit-name="r/dadjokes">
       r/DadJokes - the best Dad Jokes on reddit
     </SubredditHeader>
-    <LayoutMediumContainer>
-      <LayoutMainTwoCols class="mt-4">
+    <LayoutMediumContainer class="pt-3">
+      <LayoutMainTwoCols>
         <template #first>
-          <FilterBar class="mb-2" />
+          <FilterBar class="mb-3" />
           <PostsTimeline />
         </template>
         <template #second>
