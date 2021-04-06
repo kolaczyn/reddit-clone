@@ -1,10 +1,14 @@
 <template>
-  <div class="grid grid-cols-3 mt-2 gap-4 px-4 max-w-4xl mx-auto">
-    <div class="col-span-2">
-      <FilterBar class="mb-2" />
-      <PostsTimeline />
-    </div>
-    <Sidebar class="col-span-1" />
+  <div class="m-2 px-4 max-w-4xl mx-auto">
+    <LayoutMainTwoCols class="mt-2">
+      <template #first>
+        <FilterBar class="mb-2" />
+        <PostsTimeline />
+      </template>
+      <template #second>
+        <Sidebar />
+      </template>
+    </LayoutMainTwoCols>
   </div>
 </template>
 
