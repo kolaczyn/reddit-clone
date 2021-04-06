@@ -34,16 +34,16 @@
         Follow
       </BaseButton>
       <div v-if="isMoreOptionsOn">
-        <button class="font-bold text-blue-600 block">
+        <ButtonClear class="font-bold text-blue-600 block">
           Send Message
-        </button>
-        <button class="font-bold text-blue-600 block">
+        </ButtonClear>
+        <ButtonClear class="font-bold text-blue-600 block">
           Report User
-        </button>
+        </ButtonClear>
       </div>
-      <button class="font-bold text-blue-600 ml-auto block" @click="toggleShowMoreOptions">
+      <ButtonClear class="font-bold text-blue-600 ml-auto block" :handle-click="toggleShowMoreOptions">
         {{ showOptionsText }}
-      </button>
+      </ButtonClear>
     </div>
   </BasePaper>
 </template>
