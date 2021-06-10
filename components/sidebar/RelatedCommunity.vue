@@ -8,7 +8,7 @@
       <span>{{ formattedNumberOfMembers }} members</span>
     </span>
     <nuxt-link :to="linkToJoin">
-      <BaseButton :handle-click="joinSubreddit">
+      <BaseButton @click="joinSubreddit">
         Join
       </BaseButton>
     </nuxt-link>

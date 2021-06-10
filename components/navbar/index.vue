@@ -6,7 +6,7 @@
       </nuxt-link>
       <NavbarSearchBar class="flex-grow md:max-w-xl" />
       <nuxt-link to="/login" class="md:block hidden">
-        <BaseButton>
+        <BaseButton @click="logIn">
           Log In
         </BaseButton>
       </nuxt-link>
@@ -16,5 +16,10 @@
 
 <script>
 export default {
+  methods: {
+    logIn () {
+      console.log('logging in...')
+    }
+  }
 }
 </script>
