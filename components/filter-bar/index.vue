@@ -2,7 +2,7 @@
   <!-- There must a be a better way to do this in Vue, because this looks pretty ugly -->
   <BasePaper class="p-2">
     <ul class="flex gap-2 text-xs sm:text-base items-center">
-      <FilterBarButton :handle-click="() => handleClick('Hot')" :is-active="activeFilter === 'Hot'">
+      <FilterBarButton :is-active="activeFilter === 'Hot'" @click="handleClick('Hot')">
         <template #icon>
           <IconHot />
         </template>
@@ -10,7 +10,7 @@
       </FilterBarButton>
       </li>
       <li>
-        <FilterBarButton :handle-click="() => handleClick('New')" :is-active="activeFilter === 'New'">
+        <FilterBarButton :is-active="activeFilter === 'New'" @click="handleClick('New')">
           <template #icon>
             <IconNew />
           </template>
@@ -18,7 +18,7 @@
         </FilterBarButton>
       </li>
       <li>
-        <FilterBarButton :handle-click="() => handleClick('Top')" :is-active="activeFilter === 'Top'">
+        <FilterBarButton :is-active="activeFilter === 'Top'" @click="handleClick('Top')">
           <template #icon>
             <IconTop />
           </template>
@@ -26,14 +26,14 @@
         </FilterBarButton>
       </li>
       <li class="flex-grow xs:inline-block hidden">
-        <FilterBarButton :handle-click="() => handleClick('TripleDot')" :is-active="activeFilter === 'TripleDot'">
+        <FilterBarButton :is-active="activeFilter === 'TripleDot'" @click="handleClick('TripleDot')">
           <template #icon>
             <IconTripleDot />
           </template>
         </FilterBarButton>
       </li>
       <li class="xs:inline-block hidden">
-        <FilterBarButton :handle-click="() => handleClick('CardView')" :is-active="activeFilter === 'CardView'">
+        <FilterBarButton :is-active="activeFilter === 'CardView'" @click="handleClick('CardView')">
           <template #icon>
             <IconCardView />
           </template>
