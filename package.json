@@ -36,6 +36,7 @@
     "json-server": "^0.16.3",
     "postcss": "^8.2.8",
     "ts-jest": "^26.5.4",
-    "vue-jest": "^3.0.4"
+    "vue-jest": "^3.0.4",
+    "vuex-module-decorators": "^1.0.1"
   }
 }

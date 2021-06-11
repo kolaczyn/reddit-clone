@@ -31,7 +31,6 @@ export const actions = {
     // const { slug } = payload
     const { data } = await axios.get(`${API_ENDPOINT}?slug=${slug}`)
     const [subredditInfo] = data
-    console.log(subredditInfo)
     context.commit('setSubreddit', subredditInfo)
   },
   resetState (context) {
