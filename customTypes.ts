@@ -22,3 +22,5 @@ export interface OtherSubreddit {
   slug: string,
   members: number
 }
+
+export type SelectedSort = 'Hot' | 'New' | 'Top' | 'TripleDot' | 'CardView'
