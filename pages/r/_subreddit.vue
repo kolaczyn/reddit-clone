@@ -17,12 +17,14 @@
   </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
-export default Vue.extend({
-  asyncData ({ params }) {
+<script>
+export default {
+  async asyncData ({ params, store }) {
     const subreddit = params.subreddit
-    return { subreddit }
+    // console.log(subreddit)
+    await store.dispatch('subreddit/fetchSubredditData', subreddit)
+
+    // return { subreddit }
   }
-})
+}
 </script>

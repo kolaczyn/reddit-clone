@@ -1,0 +1,97 @@
+{
+  "subreddit": [
+    {
+      "slug": "jokes",
+      "members": 20369915,
+      "online": 2036,
+      "createdAt": "Oct 23, 2011",
+      "slogan": "r/jokes - some of them are kinda good maybe i dunno",
+      "description": "r/jokes is pretty funny, wouldn'tchya say?",
+      "posts": [
+        {
+          "user": "ser",
+          "title": "Why don't crabs give to charity?",
+          "upvotesCount": "351",
+          "commentsCount": 2,
+          "creationTimestamp": "10 hours ago",
+          "content": "Because they're shellfish.",
+          "id": 0
+        },
+        {
+          "user": "vue",
+          "title": "Why did the man name his dogs Rolex and Timex?",
+          "upvotesCount": "555",
+          "commentsCount": 21,
+          "creationTimestamp": "11 days ago",
+          "content": "Because they were watch dogs.",
+          "id": 1
+        },
+        {
+          "user": "misa",
+          "title": "What’s the best way to watch a fly-fishing tournament?",
+          "upvotesCount": "3",
+          "commentsCount": 0,
+          "creationTimestamp": "2 hours ago",
+          "content": "Live stream",
+          "id": 2
+        },
+        {
+          "user": "light",
+          "title": "Why do you never see elephants hiding in trees?",
+          "upvotesCount": "12k",
+          "commentsCount": 2,
+          "creationTimestamp": "23 hours ago",
+          "content": "Because they’re so good at it.",
+          "id": 3
+        }
+      ]
+    },
+    {
+      "slug": "DadJokes",
+      "members": 120801,
+      "online": 1801,
+      "createdAt": "Nov 13, 2019",
+      "slogan": "r/DadJokes - the best Dad Jokes on reddit",
+      "description": "Dad jokes are so frickin' funny, eh?",
+      "posts": [
+        {
+          "user": "megumin",
+          "title": "What do you call 50 pigs and 50 deer?",
+          "upvotesCount": "2.5k",
+          "commentsCount": 250,
+          "creationTimestamp": "1 month ago",
+          "content": "100 sows and bucks.",
+          "id": 4
+        },
+        {
+          "user": "darkness",
+          "title": "What do you call a fish with no eye?",
+          "upvotesCount": "10k",
+          "commentsCount": 250,
+          "creationTimestamp": "2 months ago",
+          "content": "A fsh.",
+          "id": 5
+        }
+      ]
+    },
+    {
+      "slug": "Angular",
+      "members": 100021,
+      "online": 2394,
+      "slogan": "A modern frontend framework",
+      "createdAt": "14 Sept 2016",
+      "description": "Angular  is a TypeScript-based open-source web application framework led by the Angular Team at Google and by a community of individuals and corporations. Angular is a complete rewrite from the same team that built AngularJS",
+      "posts": [
+        {
+          "user": "kolaczyn",
+          "title": "Is Angular any Good? Should I learn it?",
+          "upvotesCount": "3",
+          "commentsCount": 9,
+          "creationTimestamp": "1 month ago",
+          "content": "I've used React and Vue in the past, should I also learn Angular?",
+          "id": 6
+        }
+      ]
+    }
+  ]
+}

@@ -23,14 +23,14 @@
         </div>
       </section>
     </baselabeledpaper>
-    </section>
   </aside>
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 export default {
-  props: {
-    stats: Array
+  computed: {
+    ...mapGetters('subreddit', ['stats'])
   }
 }
 </script>
