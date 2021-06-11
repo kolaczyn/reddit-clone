@@ -2,15 +2,16 @@
   <!-- There must a be a better way to do this in Vue, because this looks pretty ugly -->
   <BasePaper class="p-2">
     <ul class="flex gap-2 text-xs sm:text-base items-center">
-      <FilterBarButton :handle-click="() => handleClick('Hot')" :is-active="activeFilter === 'Hot'">
-        <template #icon>
-          <IconHot />
-        </template>
-        Hot
-      </FilterBarButton>
+      <li>
+        <FilterBarButton name="Hot">
+          <template #icon>
+            <IconHot />
+          </template>
+          Hot
+        </FilterBarButton>
       </li>
       <li>
-        <FilterBarButton :handle-click="() => handleClick('New')" :is-active="activeFilter === 'New'">
+        <FilterBarButton name="New">
           <template #icon>
             <IconNew />
           </template>
@@ -18,7 +19,7 @@
         </FilterBarButton>
       </li>
       <li>
-        <FilterBarButton :handle-click="() => handleClick('Top')" :is-active="activeFilter === 'Top'">
+        <FilterBarButton name="Top">
           <template #icon>
             <IconTop />
           </template>
@@ -26,14 +27,14 @@
         </FilterBarButton>
       </li>
       <li class="flex-grow xs:inline-block hidden">
-        <FilterBarButton :handle-click="() => handleClick('TripleDot')" :is-active="activeFilter === 'TripleDot'">
+        <FilterBarButton name="TripleDot">
           <template #icon>
             <IconTripleDot />
           </template>
         </FilterBarButton>
       </li>
       <li class="xs:inline-block hidden">
-        <FilterBarButton :handle-click="() => handleClick('CardView')" :is-active="activeFilter === 'CardView'">
+        <FilterBarButton name="CardView">
           <template #icon>
             <IconCardView />
           </template>
@@ -43,18 +44,3 @@
     </ul>
   </BasePaper>
 </template>
-
-<script>
-export default {
-  data () {
-    return {
-      activeFilter: 'Hot'
-    }
-  },
-  methods: {
-    handleClick (label) {
-      this.activeFilter = label
-    }
-  }
-}
-</script>

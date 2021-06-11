@@ -5,7 +5,12 @@
         <Logo />
       </nuxt-link>
       <NavbarSearchBar class="flex-grow md:max-w-xl" />
-      <nuxt-link to="/login" class="md:block hidden">
+      <nuxt-link v-if="isLoggedIn" to="/r/all" class="md:block hidden">
+        <BaseButton @click="logOut">
+          Log Out
+        </BaseButton>
+      </nuxt-link>
+      <nuxt-link v-else to="/r/all" class="md:block hidden">
         <BaseButton @click="logIn">
           Log In
         </BaseButton>
@@ -15,10 +20,17 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 export default {
+  computed: {
+    ...mapGetters(['isLoggedIn'])
+  },
   methods: {
     logIn () {
-      console.log('logging in...')
+      this.$store.dispatch('logIn')
+    },
+    logOut () {
+      this.$store.dispatch('logOut')
     }
   }
 }

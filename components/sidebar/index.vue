@@ -1,17 +1,14 @@
 <template>
   <div>
-    <SidebarAboutCommunity :stats="stats">
-      {{ stats }}
+    <SidebarAboutCommunity>
       <template #header>
         About Community
       </template>
       <template #about>
-        Lorem ipsum, dolor stit amet consectetur adipisicing elit. Eveniet amet
-        doloribus natus dolorum a voluptate incidunt temporibus suscipit molestias
-        quaerat doloremque, provident, asperiores adipisci similique obcaecati.
+        {{ description }}
       </template>
       <template #created>
-        <span>Created Oct 23, 2011</span>
+        <span>Created {{ createdAt }}</span>
       </template>
     </SidebarAboutCommunity>
     <SidebarRelatedCommunities />
@@ -19,14 +16,10 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
 export default {
-  data () {
-    return {
-      stats: [
-        { number: '4.0m', label: 'Dads' },
-        { number: '2.0k', label: 'Groaning Now' }
-      ]
-    }
+  computed: {
+    ...mapState('subreddit', ['description', 'createdAt'])
   }
 }
 </script>

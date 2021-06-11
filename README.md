@@ -17,4 +17,9 @@ $ yarn start
 $ yarn generate
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+## Development
+
+```bash
+# run a fake REST server
+yarn fake-server
+```
